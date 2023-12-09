@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
@@ -7,6 +8,16 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  background-color: lightgray;
+   /* background-image: url(https://images.unsplash.com/photo-1644670054692-55ff0f2d82a4); */
+  
+}
+
+header {
+/* background-color: white; */
+/* background-image: url(https://images.unsplash.com/photo-1644670054692-55ff0f2d82a4); */
+
+
 }
 
 h1,
@@ -23,19 +34,49 @@ p {
 }
 
 
-a[href*="projects"] {
-
-}
-
 .hero-banner {
 
+  /* background-image: url(https://unsplash.com/photos/a-black-and-white-photo-of-a-grungy-wall-F1lrq-ZDBWI); */
+  background-image: url(https://images.unsplash.com/photo-1644670054692-55ff0f2d82a4);
+  width: 100vw;
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+
 }
 
-#categoryGrid {
-
+#portfolioGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 250px 250px 250px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "topProject topProject secondProject"
+  "topProject topProject thirdProject"
+  "fourthProject fifthProject sixthProject";
 }
 
-.categoryGridArea {
+.portfolioGridArea {
+  align-content: end;
+  justify-content: end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  display: grid;
+}
+
+#portfolioGrid > * {
+  border: #FF5F15 solid 5px;
+}
+
+#portfolioGrid a {
+  text-decoration: none;
+  font-size: 3em;
+ 
+
 
 }
 
@@ -43,24 +84,86 @@ a[href*="projects"] {
 
 }
 
+#topProject {
+  grid-area: topProject;
+  background-image: url(/assets/images/02-hero-bg.jpg);
+}
+
+#secondProject {
+grid-area: secondProject;
+background-color: #FF5F15;
+/* background-image: url(/assets/images/02-portfolio-2.jpg); */
+}
+
+#thirdProject {
+grid-area: thirdProject;
+background-color: red;
+/* background-image: url(/assets/images/02-portfolio-3.jpg); */
+}
+
+#fourthProject {
+grid-area: fourthProject;
+background-color: blue;
+/* background-image: url(/assets/images/02-portfolio-4.jpg); */
+}
+
+#fifthProject {
+grid-area: fifthProject;
+background-color: yellow;
+/* background-image: url(/assets/images/02-run-buddy.jpg); */
+}
+
+#sixthProject {
+  grid-area: sixthProject;
+  background-color: green;
+  /* background-image: url(/assets/images/02-run-buddy.jpg); */
+}
+
 #navBar {
   display: flex;
   flex-direction: row;
-  margin: 0px 5%;
+  justify-content: end;
+  margin: 0px 0%;
+  background-color: darkgray;
 
 }
 
-#navigation {
+/* #navigation {
   display: flex;
   width: 70%;
   align-items: center;
   justify-content: space-evenly;
 
-}
+} */
 
 #nav-items {
   display: flex;
   width: 70%;
   align-items: center;
   justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#nav-items li a {
+  color: white;
+  text-decoration: none;
+  
+
+}
+
+#nav-items li a[href*="projects"] {
+  color: #FF5F15;
+  font-size: larger;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FF5F15;
+  background-image: ;
 }
