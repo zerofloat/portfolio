@@ -50,8 +50,8 @@ header h1 {
   color: white;
   margin-top: 40px;
   margin-bottom: 40px;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: var(--licorice);
   display: inline-block;
 
@@ -75,7 +75,8 @@ p {
 #about {
   margin-left: 100px;
   margin-right: 100px;
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -184,6 +185,7 @@ background-color: yellow;
   background-image: url(//images.unsplash.com/photo-1617967397998-d48fe227a235);
   /* background-image: url(https://images.unsplash.com/photo-1644670054692-55ff0f2d82a4); */
   background-size: cover;
+  border: black solid 5px;
   /* background-color: darkgray; */
 
 }
@@ -235,7 +237,9 @@ align-items: center;
 
 footer {
   display: flex;
-  padding: 20px 20px;
+  margin-top: 25px;
+  padding: 25px 20px;
+  border: black solid 5px;
   flex-direction: row;
   justify-content: space-around;
   background-image: url(//images.unsplash.com/photo-1617967397998-d48fe227a235);
@@ -254,7 +258,7 @@ footer a {
   text-decoration: none;
   background-color: var(--licorice);
   color: white;
-  display: flex;
+  display: block;
   align-items:center;
 }
 
