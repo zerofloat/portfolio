@@ -15,7 +15,7 @@
 
 * {
   box-sizing: border-box;
-  /* border: hotpink solid 1px; */
+  border: hotpink solid 1px;
 
 }
 
@@ -56,25 +56,33 @@ header h1 {
   display: inline-block;
 
 }
-]
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 
 p {
   margin: 0;
 }
 
 
-#about {
-  margin-left: 100px;
-  margin-right: 100px;
+/* https://bennettfeely.com/clippy/ */
+
+.avatar {
+  display: flex;
+  flex-flow: column-reverse;
+  align-items: end;
+  justify-content: center;
+  margin: 50px 50px 50px 50px;
+  height: 300px;
+  width: 300px;
+  clip-path: circle(50% at 50% 50%); 
+  background-image: url(/assets/images/ALJ.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#about, #lorem {
+  border: hotpink solid 1px;
+  margin-left: 400px;
+  margin-right: 400px;
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
@@ -84,9 +92,11 @@ p {
   flex-wrap: wrap;
   letter-spacing: 0.1rem;
 
+}
 
-
-
+#lorem {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /* .hero-banner { */
@@ -105,13 +115,13 @@ p {
 #portfolioGrid {
   margin: 0px 5%;
   display: grid;
-  /* gap: 1px; */
   grid-template-rows: 500px 500px 500px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
-  "topProject topProject fourthProject"
-  "topProject topProject fourthProject"
+  "horiseon horiseon fourthProject"
+  "horiseon horiseon fourthProject"
   "secondProject thirdProject fourthProject";
+
 }
 
 .portfolioGridArea {
@@ -125,25 +135,21 @@ p {
   cursor: pointer;
 }
 
-#portfolioGrid > * {
-  /* border: hotpink dashed 1px; */
-}
 
 #portfolioGrid a {
   text-decoration: none;
   font-size: 3em;
   color: white;
  
-
-
 }
+
 
 .heading {
   background-color: var(--licorice);
 }
 
-#topProject {
-  grid-area: topProject;
+#horiseon {
+  grid-area: horiseon;
   background-image: url(/assets/images/horiseon.jpg);
 }
 
@@ -156,13 +162,14 @@ background-image: url(/assets/images/edp.jpg);
 #thirdProject {
 grid-area: thirdProject;
 background-color: red;
-/* background-image: url(/assets/images/02-portfolio-3.jpg); */
+background-image:url(//images.unsplash.com/photo-1606231680172-666810bb5047);
+background-position: center;
 }
 
 #fourthProject {
 grid-area: fourthProject;
 background-color: blue;
-/* background-image: url(/assets/images/02-portfolio-4.jpg); */
+background-image:url(//images.unsplash.com/photo-1555600341-3ab8d338991d);
 }
 
 #fifthProject {
@@ -262,11 +269,59 @@ footer a {
   align-items:center;
 }
 
-footer a:hover{
+footer a:hover {
 color: var(--fire-engine-red);
 
   }
 
-  /* color: var(--rosewood); */
+
+  /*Desktop Media Query*/
+
+@media screen and (min-width: 1024px) {
+
+}
+
+/* Tablet Media Query */
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {}
+
+/* Mobile Media Query */
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+  #navBar li {
+  display: none;
+}
+
+.avatar {
+  margin: 5px;
+  height: 30vh;
+  width: 30vw;
+}
+
+#about, #lorem {
+  margin: 0px;
+  font-size: 0.5em;
+}
+
+  #portfolioGrid {
+
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "horiseon"
+    "secondProject"
+    "thirdProject" 
+    "fourthProject";
+
+  }
+/* 
+  #portfolioGrid {
+    grid-template-rows: 50vw;
+    grid-template-columns: 1fr;
+    grid-template-areas: topProject ; */
+  }
 
 
+
+@media ()
