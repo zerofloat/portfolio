@@ -13,9 +13,7 @@
   --bittersweet-shimmer: #BB5057ff;
 }
 
-* {
-  box-sizing: border-box;
-  border: hotpink solid 1px;
+* {  box-sizing: border-box;
 
 }
 
@@ -27,24 +25,8 @@ body {
   letter-spacing: 0.5rem;
   line-height: 1.5;
   background-color: white;
-  /* background-image: url(/assets/images/ALJ.png);
-  background-repeat: repeat;
-  background-position:5%;  */
-  /* background-size: ; */
-  /* background-image: url(https://images.unsplash.com/photo-1644670054692-55ff0f2d82a4); */
-  /* background-color: var(--dim-gray); */
-  
+
 }
-
-
-  /* display: none; */
-/* background-color: white; */
-/* background-image: url(https://images.unsplash.com/photo-1644670054692-55ff0f2d82a4); */
-
-/* .header h1 {
-
-  display: none;
-} */
 
 header h1 {
   color: white;
@@ -61,30 +43,24 @@ p {
   margin: 0;
 }
 
-
-/* https://bennettfeely.com/clippy/ */
+.container {
+  display: flex;
+  flex-direction: row;
+}
 
 .avatar {
   display: flex;
-  flex-flow: column-reverse;
-  align-items: end;
-  justify-content: center;
   margin: 50px 50px 50px 50px;
   height: 300px;
   width: 300px;
   clip-path: circle(50% at 50% 50%); 
-  background-image: url(/assets/images/ALJ.png);
-  background-position: center;
-  background-repeat: no-repeat;
 
 }
 
 #about, #lorem {
-  border: hotpink solid 1px;
-  margin-left: 400px;
-  margin-right: 400px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+
+  padding-left: 80px;
+  padding-right: 80px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -93,24 +69,6 @@ p {
   letter-spacing: 0.1rem;
 
 }
-
-#lorem {
-  padding-left: 80px;
-  padding-right: 80px;
-}
-
-/* .hero-banner { */
-
-  /* background-image: url(https://unsplash.com/photos/a-black-and-white-photo-of-a-grungy-wall-F1lrq-ZDBWI); */
-  /* background-image: url(https://images.unsplash.com/photo-1644670054692-55ff0f2d82a4);
-  width: 100vw;
-  height: 40vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-    
-
-/* } */
 
 #portfolioGrid {
   margin: 0px 5%;
@@ -127,7 +85,6 @@ p {
 .portfolioGridArea {
   align-content: end;
   justify-content: start;
-  /* background-position: 82.5% 17.5%; */
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
@@ -172,28 +129,14 @@ background-color: blue;
 background-image:url(//images.unsplash.com/photo-1555600341-3ab8d338991d);
 }
 
-#fifthProject {
-grid-area: fifthProject;
-background-color: yellow;
-/* background-image: url(/assets/images/02-run-buddy.jpg); */
-}
-
-#sixthProject {
-  grid-area: sixthProject;
-  background-color: green;
-  /* background-image: url(/assets/images/02-run-buddy.jpg); */
-}
-
 #navBar {
   display: flex;
   flex-direction: row;
   justify-content: end;
   margin: 0px 0%;
   background-image: url(//images.unsplash.com/photo-1617967397998-d48fe227a235);
-  /* background-image: url(https://images.unsplash.com/photo-1644670054692-55ff0f2d82a4); */
   background-size: cover;
   border: black solid 5px;
-  /* background-color: darkgray; */
 
 }
 
@@ -204,14 +147,6 @@ justify-content: center;
 align-items: center;
 
 }
-
-/* #navigation {
-  display: flex;
-  width: 70%;
-  align-items: center;
-  justify-content: space-evenly;
-
-} */
 
 #nav-items {
   display: flex;
@@ -236,11 +171,6 @@ align-items: center;
 #nav-items li a:hover {
   color: var(--fire-engine-red);
 }
-/* 
-#nav-items li a[href*="projects"] {
-  color: var(--rosewood);
-  font-size: larger; */
-/* } */
 
 footer {
   display: flex;
@@ -250,7 +180,6 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   background-image: url(//images.unsplash.com/photo-1617967397998-d48fe227a235);
-  /* background-image: url(https://images.unsplash.com/photo-1644670054692-55ff0f2d82a4); */
   background-repeat: no-repeat;
   background-size:cover;
   color: white;
@@ -277,31 +206,74 @@ color: var(--fire-engine-red);
 
   /*Desktop Media Query*/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1920px) {
+
+
+#about, #lorem {
+  margin: 0px;
+  font-size: 1.25em;
+}
 
 }
 
-/* Tablet Media Query */
+/* Split Screen / Tablet Media Query */
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {}
+@media screen and (min-width:901px) and (max-width: 1919px) {
 
+  #portfolioGrid {
+
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "horiseon horiseon fourthProject"
+    "secondProject" 
+    "thirdProject" ;
+
+}
+  
+}
 /* Mobile Media Query */
 
-@media screen and (min-width: 0px) and (max-width: 600px) {
+@media screen and (min-width: 0px) and (max-width: 900px) {
 
-  #navBar li {
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
+
+.container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .nav h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+
+  #nav-items {
   display: none;
 }
 
 .avatar {
   margin: 5px;
-  height: 30vh;
-  width: 30vw;
+  height: 100px; 
+  width: 100px;
+  align-self: center;
+
 }
 
 #about, #lorem {
   margin: 0px;
-  font-size: 0.5em;
+  font-size: 1em;
+}
+
+#lorem {
+  display: none;
 }
 
   #portfolioGrid {
@@ -315,13 +287,5 @@ color: var(--fire-engine-red);
     "fourthProject";
 
   }
-/* 
-  #portfolioGrid {
-    grid-template-rows: 50vw;
-    grid-template-columns: 1fr;
-    grid-template-areas: topProject ; */
+
   }
-
-
-
-@media ()
