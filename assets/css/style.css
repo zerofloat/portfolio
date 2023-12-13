@@ -114,7 +114,7 @@ p {
 #secondProject {
 grid-area: secondProject;
 background-color: #FF5F15;
-background-image: url(../assets/images/edp.jpg);
+background-image: url(../images/edp.jpg);
 }
 
 #thirdProject {
