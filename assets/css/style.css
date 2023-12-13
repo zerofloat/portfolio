@@ -107,13 +107,14 @@ p {
 
 #horiseon {
   grid-area: horiseon;
-  background-image: url(./assets/images/horiseon.jpg);
+  background-image: url(../images/horiseon.jpg);
+  background-color: var(--fire-engine-red);
 }
 
 #secondProject {
 grid-area: secondProject;
 background-color: #FF5F15;
-background-image: url(./assets/images/edp.jpg);
+background-image: url(../assets/images/edp.jpg);
 }
 
 #thirdProject {
