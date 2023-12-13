@@ -107,13 +107,13 @@ p {
 
 #horiseon {
   grid-area: horiseon;
-  background-image: url("/assets/images/horiseon.jpg");
+  background-image: url("./assets/images/horiseon.jpg");
 }
 
 #secondProject {
 grid-area: secondProject;
 background-color: #FF5F15;
-background-image: url("/assets/images/edp.jpg");
+background-image: url("./assets/images/edp.jpg");
 }
 
 #thirdProject {
@@ -142,7 +142,6 @@ background-image:url(//images.unsplash.com/photo-1555600341-3ab8d338991d);
 
 #navbar h2 {
 display: flex;
-flex-direction:;
 justify-content: center;
 align-items: center;
 
@@ -156,9 +155,6 @@ align-items: center;
   list-style-type: none;
 }
 
-#nav-items li {
-  
-}
 
 #nav-items li a {
   color: white;
