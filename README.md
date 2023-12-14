@@ -16,15 +16,15 @@ Click the hyperlinks in the nav bar and use the scroll wheel to navigate through
 
 ## Credits
 
-"Add a link to an image in a css style sheet" https://stackoverflow.com/questions/14730484/add-a-link-to-an-image-in-a-css-style-sheet - lines 46 - 49 in index.html, lines 108 - 138 in style.css
+"Add a link to an image in a css style sheet" https://stackoverflow.com/questions/14730484/add-a-link-to-an-image-in-a-css-style-sheet - *lines 46 - 49 in index.html, lines 108 - 138 in style.css*
 
-Coolors - The super fast color palettes generator! https://coolors.co/ - lines 4 - 13 in style.css
+Coolors - The super fast color palettes generator! https://coolors.co/ - *lines 4 - 13 in style.css*
 
-Kevin Powell - Creating a nice layout CSS Grid layout using grid template areas https://youtu.be/v5KzBPUEgGQ - lines 73 - 92 in style.css
+Kevin Powell - Creating a nice layout CSS Grid layout using grid template areas https://youtu.be/v5KzBPUEgGQ - *lines 73 - 92 in style.css*
 
-"How do I apply opacity to a CSS color variable?" https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable - line 5 style.css
+"How do I apply opacity to a CSS color variable?" https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable - *line 5 style.css*
 
-Clippy — CSS clip-path maker https://bennettfeely.com/clippy/ - line 56 in style.css
+Clippy — CSS clip-path maker https://bennettfeely.com/clippy/ - *line 56 in style.css*
 
 
 ## License
