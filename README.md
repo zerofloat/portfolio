@@ -3,7 +3,7 @@
 This repository contains a portfolio site featuring links to a deployed website, contact details and imagery throughout. The site is responsive and uses Flexbox to reposition, condense, and hide content to improve UX on smaller screens.
 
 
-[screenshot of responsive portfolio](assets/images/portfolio-responsive-screenshot.png)
+![screenshot of responsive portfolio](assets/images/portfolio-responsive-screenshot.png)
 
 
 ## Installation
